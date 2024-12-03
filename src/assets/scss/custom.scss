@@ -1,0 +1,75 @@
+/*!
+* Version: 1.2.0
+* Template: Example Project
+* Author: iqonic.design
+* Design and Developed by: iqonic.design
+* NOTE: This file contains the styling for Template.
+*
+*/
+
+// Configuration
+@import "./bootstrap/functions";
+// Variables
+@import "./hope-ui-design-system/variable";
+@import "./hope-ui-design-system/variables/index";
+@import "./bootstrap/variables";
+
+@import "./bootstrap/mixins";
+
+// Meryas Design System Mixin And Helper
+@import "./hope-ui-design-system/helper/functions";
+@import "./hope-ui-design-system/helper/mixins";
+@import "./hope-ui-design-system/helper/reboot";
+
+@import "./custom/auth/authentication";
+@import "./custom/kanban/kanban";
+@import "./custom/pricing/pricing";
+@import "./custom/ui-kit/ui-kit";
+
+.logoSignIn {
+  width: 100px;
+}
+.logoBg {
+  width: 25%;
+  opacity: 0.1;
+}
+.tracking-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .tracking-timer {
+    font-size: 50px;
+  }
+  .tracking-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button {
+      border-radius: 10px;
+      width: 150px;
+      height: 40px;
+      border: 0;
+      color: white;
+      &:disabled {
+        opacity: 0.5;
+      }
+      &.start-tracking {
+        background: #1aa053;
+      }
+      &.end-tracking {
+        background: crimson;
+      }
+    }
+  }
+}
+.sidebar.sidebar-base .secondLogo {
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out, opacity 400ms ease-in-out, transform 400ms ease-in-out, opacity 400ms ease-in-out;
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+.sidebar.sidebar-mini.sidebar-base:not(.sidebar-hover:hover) .secondLogo {
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out, opacity 400ms ease-in-out, transform 400ms ease-in-out, opacity 400ms ease-in-out;
+  transform: translateX(-100%) scale(0);
+  opacity: 0;
+}
