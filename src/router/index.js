@@ -47,6 +47,7 @@ import {Navigate} from "react-router-dom";
 import HelpDesk from "../views/helpdesk/helpdesk";
 import StuffDirectory from "../views/stuff-directory/stuff-directory";
 import FreeDays from "../views/free-days/free-days";
+import Tracking from "../views/tracking/tracking";
 
 
 export const DefaultRouter = [
@@ -73,6 +74,10 @@ export const DefaultRouter = [
             {
                 path: 'freedays',
                 element: <FreeDays />
+            },
+            {
+                path: 'tracking',
+                element: <Tracking />
             },
             {
                 path: 'special-pages/kanban',
